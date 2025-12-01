@@ -25,7 +25,7 @@ gcloud artifacts repositories create <repo-name> \
 gcloud auth configure-docker <region>-docker.pkg.dev<br>
 
 #### Build the docker image on Cloud<br>
-gcloud builds submit --tag <region>-docker.pkg.dev/<project-id>/<repo-name>/<image-name>:latest<br>
+gcloud builds submit --tag <<region>>-docker.pkg.dev/<<project-id>>/<repo-name>/<image-name>:latest<br>
 
 Ref: https://docs.cloud.google.com/run/docs/building/containers<br>
 
