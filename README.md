@@ -22,12 +22,12 @@ gcloud services enable run.googleapis.com
 
 gcloud artifacts repositories create {repo-name} \
         --repository-format=docker \
-        --location={your region} \
+        --location={region} \
         --description={some desc}
         --immutable-tags \
         --async
 #### Check the repo just created
-gcloud artifacts repositories describe app-repo --location={your region}
+gcloud artifacts repositories describe app-repo --location={region}
 
 gcloud auth configure-docker {region}-docker.pkg.dev<br>
 
