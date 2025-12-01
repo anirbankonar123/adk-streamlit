@@ -1,4 +1,4 @@
-# Install uv <br>
+#### Install uv <br>
 curl -LsSf https://astral.sh/uv/install.sh | sh<br>
 uv pip compile requirements.in -o requirements.txt<br>
 # This creates a .venv folder in your current directory<br>
