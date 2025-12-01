@@ -15,17 +15,17 @@ streamlit run app.py<br>
 
 #### Prepare your env for deployment on GCP<br>
 Ref: https://docs.cloud.google.com/run/docs/setup<br>
-gcloud artifacts repositories create <repo-name> \
+gcloud artifacts repositories create {repo-name} \
         --repository-format=docker \
-        --location=<your region> \
-        --description="<some desc>" 
+        --location={your region} \
+        --description={some desc}
         --immutable-tags \
         --async
 
 gcloud auth configure-docker <region>-docker.pkg.dev<br>
 
 #### Build the docker image on Cloud<br>
-gcloud builds submit --tag {region}-docker.pkg.dev/<<project-id>>/<repo-name>/<image-name>:latest<br>
+gcloud builds submit --tag {region}-docker.pkg.dev/{project-id}/{repo-name}/{image-name}:latest<br>
 
 Ref: https://docs.cloud.google.com/run/docs/building/containers<br>
 
