@@ -8,11 +8,12 @@ uv pip sync requirements.txt<br>
 source .venv/bin/activate<br>
 
 #### Test the chatbot locally:<br>
+######  This chatbot does not use Neo4J, its just part of the setup for a future agent
+###### To create a free Neo4j instance, go to console.neo4j.io and signup for a free instance
 export OPENAI_API_KEY=<br>
 export NEO4J_URI=<br>
 export NEO4J_PASSWORD=<br>
-#### This chatbot does not use Neo4J, its just part of the setup for a future agent
-#### To create a free Neo4j instance, go to console.neo4j.io and signup for a free instance
+
 streamlit run app.py<br>
 
 #### Prepare your env for deployment on GCP<br>
