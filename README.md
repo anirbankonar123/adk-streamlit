@@ -29,7 +29,7 @@ gcloud builds submit --tag {region}-docker.pkg.dev/{project-id}/{repo-name}/{ima
 
 Ref: https://docs.cloud.google.com/run/docs/building/containers<br>
 
-#### Deploy the docker image on Cloud run<br>
+#### Deploy the docker image on Cloud run (Use 1GB RAM with 1 vCPU) <br>
 https://docs.cloud.google.com/run/docs/quickstarts/deploy-container<br>
 
 
