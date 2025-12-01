@@ -15,12 +15,12 @@ streamlit run app.py<br>
 
 #### Prepare your env for deployment on GCP<br>
 Ref: https://docs.cloud.google.com/run/docs/setup<br>
-gcloud artifacts repositories create <repo-name> \<br>
-        --repository-format=docker \<br>
-        --location=<your region> \<br>
-        --description="<some desc>" \<br>
-        --immutable-tags \<br>
-        --async<br>
+gcloud artifacts repositories create <repo-name> \
+        --repository-format=docker \
+        --location=<your region> \
+        --description="<some desc>" 
+        --immutable-tags \
+        --async
 
 gcloud auth configure-docker <region>-docker.pkg.dev<br>
 
