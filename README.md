@@ -46,6 +46,9 @@ Ref: https://docs.cloud.google.com/run/docs/building/containers<br>
 Select the docker image on the dashboard in Cloud run Services page, select config of Cloud run and deploy as Service<br>
 https://docs.cloud.google.com/run/docs/quickstarts/deploy-container<br>
 
+#### Acknowledgements:
+The code is adapted from the course : https://learn.deeplearning.ai/courses/agentic-knowledge-graph-construction 
+
 
 
 
