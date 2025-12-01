@@ -22,7 +22,7 @@ gcloud artifacts repositories create {repo-name} \
         --immutable-tags \
         --async
 
-gcloud auth configure-docker <region>-docker.pkg.dev<br>
+gcloud auth configure-docker {region}-docker.pkg.dev<br>
 
 #### Build the docker image on Cloud<br>
 gcloud builds submit --tag {region}-docker.pkg.dev/{project-id}/{repo-name}/{image-name}:latest<br>
