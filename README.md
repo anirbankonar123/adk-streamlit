@@ -15,12 +15,19 @@ streamlit run app.py<br>
 
 #### Prepare your env for deployment on GCP<br>
 Ref: https://docs.cloud.google.com/run/docs/setup<br>
+gcloud config set project YOUR_PROJECT_ID
+
+#### Enable cloud run
+gcloud services enable run.googleapis.com
+
 gcloud artifacts repositories create {repo-name} \
         --repository-format=docker \
         --location={your region} \
         --description={some desc}
         --immutable-tags \
         --async
+#### Check the repo just created
+gcloud artifacts repositories describe app-repo --location={your region}
 
 gcloud auth configure-docker {region}-docker.pkg.dev<br>
 
@@ -31,6 +38,7 @@ Ref: https://docs.cloud.google.com/run/docs/building/containers<br>
 
 #### Deploy the docker image on Cloud run (Use 1GB RAM with 1 vCPU) <br>
 https://docs.cloud.google.com/run/docs/quickstarts/deploy-container<br>
+Select the docker image on the dashboard, select config of Cloud run and deploy as Service
 
 
 
